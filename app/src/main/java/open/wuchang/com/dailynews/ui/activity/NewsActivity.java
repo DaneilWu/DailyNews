@@ -1,7 +1,9 @@
-package open.wuchang.com.dailynews;
+package open.wuchang.com.dailynews.ui.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import open.wuchang.com.dailynews.R;
 
 public class NewsActivity extends AppCompatActivity {
 
