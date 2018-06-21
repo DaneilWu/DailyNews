@@ -1,4 +1,4 @@
-package open.wuchang.com.dailynews.service;
+package com.wuchang.dailynews.service;
 
 import android.content.Context;
 
@@ -8,8 +8,6 @@ import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
-import retrofit2.http.GET;
-import retrofit2.http.Query;
 
 /**
  * Created by Administrator on 2018/6/21.

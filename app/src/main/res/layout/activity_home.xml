@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlayout_parent_homeactivity"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/activity_main_toolbar"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:minHeight="?attr/actionBarSize"
-        android:background="?attr/colorPrimary">
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
 
+    <ImageView
+        android:fitsSystemWindows="true"
+        android:layout_width="200dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:src="@mipmap/img_home" />
 
-    </android.support.v7.widget.Toolbar>
-</FrameLayout>
+</RelativeLayout>

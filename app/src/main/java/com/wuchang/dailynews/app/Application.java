@@ -1,4 +1,4 @@
-package open.wuchang.com.dailynews.app;
+package com.wuchang.dailynews.app;
 
 /**
  * Created by Administrator on 2018/6/21.
