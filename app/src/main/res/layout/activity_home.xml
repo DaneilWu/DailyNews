@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/rlayout_parent_homeactivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
     android:fitsSystemWindows="true">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.Toolbar>
+
     <ImageView
+        android:id="@+id/imgvew_home_logo"
         android:fitsSystemWindows="true"
         android:layout_width="200dp"
-        android:layout_height="140dp"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="60dp"
-        android:src="@mipmap/img_home" />
+        android:layout_marginBottom="25dp"
+        android:src="@mipmap/splash_banner"
+        android:scaleType="centerInside"/>
 
 </RelativeLayout>

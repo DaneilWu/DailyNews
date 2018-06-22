@@ -5,6 +5,11 @@ package com.wuchang.dailynews.app;
  */
 
 public class Application {
+
+    /***
+     * 欢迎页面停留时间
+     */
+    public static final int SPLASH_DISPLAY_LENGHT = 1000;
     /***
      * 注册接口
      * key=00d91e8e0cca2b76f515926a36db68f5 应用Key

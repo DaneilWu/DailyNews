@@ -7,6 +7,7 @@ import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -18,6 +19,7 @@ import butterknife.Unbinder;
 public abstract class BaseActivity extends AppCompatActivity {
 
     private Unbinder mBind;
+    public final String TAG_LOG = this.getClass().getName();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -37,7 +39,8 @@ public abstract class BaseActivity extends AppCompatActivity {
             Window window = getWindow();
             window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             int statusBarHeight = getStatusBarHeight(this.getBaseContext());
-            View view = findViewById(getToolbarId());
+            View view = getToolbar();
+             Log.i(TAG_LOG, String.valueOf(view));
             view.setPadding(0, statusBarHeight, 0, 0);
         }
     }
@@ -49,6 +52,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         if (resourceId > 0) {
             result = context.getResources().getDimensionPixelSize(resourceId);
         }
+        Log.i(TAG_LOG, String.valueOf(result));
         return result;
     }
 
@@ -59,7 +63,7 @@ public abstract class BaseActivity extends AppCompatActivity {
      */
     public abstract int getLayoutId();
 
-    public abstract int getToolbarId();
+    public abstract View getToolbar();
 
     /***
      * 初始化views
