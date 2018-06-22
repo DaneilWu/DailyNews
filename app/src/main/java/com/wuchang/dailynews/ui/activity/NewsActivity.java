@@ -10,7 +10,7 @@ import com.wuchang.dailynews.base.BaseActivity;
 
 public class NewsActivity extends BaseActivity {
 
-    @BindView(R.id.toolbar_news) Toolbar toolbar;
+    @BindView(R.id.toolbar_news) Toolbar mToolbar;
 
     @Override
     public int getLayoutId() {
@@ -19,7 +19,7 @@ public class NewsActivity extends BaseActivity {
 
     @Override
     public View getToolbar() {
-        return null;
+        return mToolbar;
     }
 
     @Override
@@ -29,7 +29,8 @@ public class NewsActivity extends BaseActivity {
 
     @Override
     public void initToolBar() {
-        setSupportActionBar(toolbar);
+        setImmerseLayout();
+        setSupportActionBar(mToolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
     }
 

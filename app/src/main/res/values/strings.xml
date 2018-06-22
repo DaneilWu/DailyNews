@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">今日头条</string>
     <string name="login_title">登录你的头条，精彩永不丢失</string>
+    <string name="not_login">未登录</string>
+    <string name="pull">发布</string>
+    <string name="search_hint">搜你想搜的</string>
 </resources>
