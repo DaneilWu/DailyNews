@@ -7,9 +7,10 @@
     tools:context="com.wuchang.dailynews.ui.activity.NewsActivity">
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar_activity_news"
+        android:id="@+id/toolbar_news"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
 
         <RelativeLayout
             android:id="@+id/rlayout_login"
@@ -17,7 +18,9 @@
             android:layout_height="wrap_content">
             <ImageButton
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:src="@mipmap/user"
+                android:background="@android:color/transparent"/>
         </RelativeLayout>
 
     </android.support.v7.widget.Toolbar>
