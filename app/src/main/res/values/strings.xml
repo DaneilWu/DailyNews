@@ -4,4 +4,8 @@
     <string name="not_login">未登录</string>
     <string name="pull">发布</string>
     <string name="search_hint">搜你想搜的</string>
+    <string name="tab_home">首页</string>
+    <string name="tab_video_watermelon">西瓜视频</string>
+    <string name="tab_micro_head">微头条</string>
+    <string name="tab_video_volcano">小视频</string>
 </resources>

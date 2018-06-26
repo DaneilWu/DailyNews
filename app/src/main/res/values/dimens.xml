@@ -2,4 +2,6 @@
 <resources>
     <dimen name="toolbar_height">30dp</dimen>
     <dimen name="text_content">12sp</dimen>
+    <dimen name="height_tab">40dp</dimen>
+    <dimen name="height_toolbar">60dp</dimen>
 </resources>

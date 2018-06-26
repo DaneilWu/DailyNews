@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tab_choice">
+        <item>@string/tab_home</item>
+        <item>@string/tab_video_watermelon</item>
+        <item>@string/tab_micro_head</item>
+        <item>@string/tab_video_volcano</item>
+    </string-array>
+</resources>
