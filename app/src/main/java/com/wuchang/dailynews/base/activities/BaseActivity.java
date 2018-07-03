@@ -1,4 +1,4 @@
-package com.wuchang.dailynews.base;
+package com.wuchang.dailynews.base.activities;
 
 import android.content.Context;
 import android.graphics.Color;

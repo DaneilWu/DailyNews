@@ -1,10 +1,9 @@
 package com.wuchang.dailynews.ui.activity;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.wuchang.dailynews.base.BaseActivity;
+import com.wuchang.dailynews.base.activities.BaseActivity;
 
 import open.wuchang.com.dailynews.R;
 

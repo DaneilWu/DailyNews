@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import butterknife.BindView;
 import open.wuchang.com.dailynews.R;
-import com.wuchang.dailynews.base.BaseActivity;
+import com.wuchang.dailynews.base.activities.BaseActivity;
 
 public class NewsActivity extends BaseActivity {
 

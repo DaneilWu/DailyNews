@@ -1,4 +1,4 @@
-package com.wuchang.dailynews.base;
+package com.wuchang.dailynews.base.fragments;
 
 import android.app.Activity;
 import android.os.Bundle;

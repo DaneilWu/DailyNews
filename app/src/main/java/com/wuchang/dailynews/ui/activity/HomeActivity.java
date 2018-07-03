@@ -1,8 +1,6 @@
 package com.wuchang.dailynews.ui.activity;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
@@ -12,10 +10,8 @@ import android.util.Log;
 import android.view.View;
 
 import com.wuchang.dailynews.app.Application;
-import com.wuchang.dailynews.base.BaseActivity;
-import com.wuchang.dailynews.utils.LoginUtil;
+import com.wuchang.dailynews.base.activities.BaseActivity;
 
-import butterknife.BindView;
 import open.wuchang.com.dailynews.R;
 
 public class HomeActivity extends BaseActivity {
