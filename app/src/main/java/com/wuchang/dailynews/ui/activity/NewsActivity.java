@@ -2,9 +2,11 @@ package com.wuchang.dailynews.ui.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import butterknife.BindView;
 import open.wuchang.com.dailynews.R;
@@ -39,12 +41,29 @@ public class NewsActivity extends BaseActivity {
     }
 
     private void initTab() {
-        mTabLayout.setTabMode(TabLayout.MODE_FIXED);
-        mTabLayout.setSelectedTabIndicatorHeight(0);
-        ViewCompat.setElevation(mTabLayout, 10);
-        String[] tabTitles = getResources().getStringArray(R.array.tab_choice);
-        for (int i = 0; i < tabTitles.length; i++) {
-            mTabLayout.addTab(mTabLayout.newTab().setText(tabTitles[i]));
-        }
+        setupTabIcons();
     }
+
+    private void setupTabIcons() {
+        mTabLayout.getTabAt(0).setCustomView(getTabView(0));
+        mTabLayout.getTabAt(1).setCustomView(getTabView(1));
+        mTabLayout.getTabAt(2).setCustomView(getTabView(2));
+        mTabLayout.getTabAt(3).setCustomView(getTabView(3));
+    }
+
+    private View getTabView(int position) {
+        View view = LayoutInflater.from(this).inflate(R.layout.tab_layout, null);
+        TextView tabTitle = view.findViewById(R.id.txt_tab_title);
+        ImageView tabIcon = view.findViewById(R.id.img_tab_icon);
+        String[] tabTitles = getResources().getStringArray(R.array.tab_choice);
+        int[] tabIcons = {R.drawable.tab_home_selector, R.drawable.tab_video_watermelon_selector,
+                R.drawable.tab_micro_head_selector, R.drawable.tab_video_volcano_selector};
+
+        tabTitle.setText(tabTitles[position]);
+        //tabTitle.setTextColor(R.drawable.tab_text_color);
+        tabIcon.setImageResource(tabIcons[position]);
+        return view;
+    }
+
+
 }

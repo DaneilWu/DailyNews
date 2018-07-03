@@ -62,6 +62,38 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/height_tab"
         android:background="@color/gray_light"
-        app:layout_constraintBottom_toBottomOf="parent"></android.support.design.widget.TabLayout>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabTextColor="@color/gray"
+        app:tabIndicatorHeight="@dimen/zero"
+        app:tabMode="fixed"
+        app:tabGravity="fill">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/item_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/tab_home"
+            android:background="@drawable/tab_home_selector" />
+        <android.support.design.widget.TabItem
+            android:id="@+id/item_video_watermelon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/tab_video_watermelon"
+            android:background="@drawable/tab_video_watermelon_selector"/>
+        <android.support.design.widget.TabItem
+            android:id="@+id/item_micro_head"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/tab_micro_head"
+            android:background="@drawable/tab_micro_head_selector"/>
+        <android.support.design.widget.TabItem
+            android:id="@+id/item_video_volcano"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/tab_video_volcano"
+            android:background="@drawable/tab_video_volcano_selector"/>
+
+    </android.support.design.widget.TabLayout>
 
 </android.support.constraint.ConstraintLayout>
